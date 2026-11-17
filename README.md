@@ -6,6 +6,11 @@ person has reviewed the draft and clicked Send.
 
 It handles Japanese business mail first (honorifics, Japan time), and English second.
 
+[![TobirAInbox demo film](docs/media/tobirainbox-demo-poster.jpg)](docs/media/tobirainbox-demo.mp4)
+
+Demo film, 49 seconds, with music. The film redraws the console's screens at a larger size, and
+its labels are English translations of the Japanese interface.
+
 ## Features
 
 - Classification of each incoming message into one of these labels: inquiry, booking, change
