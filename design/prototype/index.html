@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TobirAInbox — prototype</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%2318181b%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app" id="app">
+  <nav class="rail" aria-label="メニュー">
+    <span class="logo">扉</span>
+    <button class="ri on" data-view="queue" title="対応待ち"><svg viewBox="0 0 24 24"><path d="M3 13l3-8h12l3 8v6H3z"/><path d="M3 13h5l1 2h6l1-2h5"/></svg><span class="n" id="railCount">0</span></button>
+    <button class="ri" data-view="sent" title="送信済み"><svg viewBox="0 0 24 24"><path d="M4 12l16-8-6 16-3-7z"/></svg></button>
+    <button class="ri" data-view="soon" title="プレイブック"><svg viewBox="0 0 24 24"><path d="M5 4h11a3 3 0 013 3v13H8a3 3 0 01-3-3z"/><path d="M5 17a3 3 0 013-3h11"/></svg></button>
+    <button class="ri" data-view="soon" title="分析"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></button>
+    <span class="sp"></span>
+    <button class="ri" data-view="soon" title="設定"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg></button>
+    <span class="me" title="森">水</span>
+  </nav>
+
+  <section class="list" aria-label="一覧">
+    <div class="lh">
+      <div class="lht">
+        <h1 id="listTitle">対応待ち</h1>
+        <select id="mailbox" aria-label="メールボックス">
+          <option value="">すべて</option>
+          <option>leo@</option><option>kit@</option><option>mia@</option><option>ada@</option>
+        </select>
+      </div>
+      <label class="search"><svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="5"/><path d="M11 11l3 3"/></svg><input id="q" type="search" placeholder="検索"></label>
+    </div>
+    <div class="seg" id="seg"></div>
+    <div class="rows" id="rows"></div>
+    <div class="today" id="today"></div>
+  </section>
+
+  <main class="conv" id="conv"></main>
+  <aside class="side" id="side"></aside>
+</div>
+<div class="toasts" id="toasts"></div>
+<div class="kbd" id="kbdHelp">
+  <b>キーボード</b>
+  <span><kbd>J</kbd><kbd>K</kbd> 次 / 前</span>
+  <span><kbd>E</kbd> 下書きを編集</span>
+  <span><kbd>Ctrl</kbd>+<kbd>Enter</kbd> 送信</span>
+  <span><kbd>D</kbd> 完了</span>
+  <span><kbd>?</kbd> この表示</span>
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

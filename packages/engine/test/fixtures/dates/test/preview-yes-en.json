@@ -1,0 +1,21 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "preview-yes-en",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-07T23:30:00Z",
+      "text": "Yes please, I'd be interested in seeing a preview of the new site.\n\nKen",
+      "expect": {
+        "dates": [],
+        "preview": {
+          "wanted": true,
+          "due": "2026-11-11",
+          "source": "rule"
+        }
+      }
+    }
+  ]
+}

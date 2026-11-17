@@ -1,0 +1,24 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "urgent-cancel",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-09T00:15:00Z",
+      "text": "大野様\n\n大変申し訳ございません。本日15時からのお打ち合わせですが、急用のためキャンセルさせていただけますでしょうか。\n改めて日程のご相談をさせてください。",
+      "expect": {
+        "hint": true,
+        "dates": [
+          {
+            "start": "2026-11-09T15:00",
+            "end": "2026-11-09T15:30",
+            "tz": "Asia/Tokyo",
+            "kind": "cancel"
+          }
+        ]
+      }
+    }
+  ]
+}

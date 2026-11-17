@@ -1,0 +1,24 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "us-partner-call",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-05T18:00:00Z",
+      "text": "Hi Alex,\n\nThanks for the deck. Would Tuesday 3pm PT work for a quick call? Happy to send an invite.\n\nBest,\nMegan",
+      "expect": {
+        "hint": true,
+        "dates": [
+          {
+            "start": "2026-11-10T15:00",
+            "end": "2026-11-10T15:30",
+            "tz": "America/Los_Angeles",
+            "kind": "offer"
+          }
+        ]
+      }
+    }
+  ]
+}

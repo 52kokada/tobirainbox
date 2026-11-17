@@ -1,0 +1,24 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "cancel-4pm",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-08T23:00:00Z",
+      "text": "Sorry, I have to cancel today's 4pm call. I'll send new times shortly.",
+      "expect": {
+        "hint": true,
+        "dates": [
+          {
+            "start": "2026-11-09T16:00",
+            "end": "2026-11-09T16:30",
+            "tz": "Asia/Tokyo",
+            "kind": "cancel"
+          }
+        ]
+      }
+    }
+  ]
+}

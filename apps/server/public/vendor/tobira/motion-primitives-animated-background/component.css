@@ -1,0 +1,30 @@
+/* 選んだ項目へ滑る背景（Animated Background）。背景の面は1枚だけで、選んだ項目の位置と大きさへ移る。
+   移る動きは公式の見本と同じ、はね返り 0.2・0.3 秒のばね。現れる・消えるときは不透明度だけを変える。 */
+.tb-animated-background {
+  --tb-ab-move: 317ms linear(0, 0.043 2.6%, 0.125 5.3%, 0.226 7.9%, 0.334 10.5%, 0.44 13.2%, 0.54 15.8%, 0.629 18.4%, 0.707 21.1%, 0.773 23.7%, 0.828 26.3%, 0.873 28.9%, 0.909 31.6%, 0.937 34.2%, 0.959 36.8%, 0.975 39.5%, 0.986 42.1%, 0.995 44.7%, 1 47.4%, 1.004 50%, 1.006 52.6%, 1.007 57.9%, 1.006 63.2%, 1.004 71.1%, 1.002 78.9%, 1.001 86.8%, 1);
+  --tb-ab-fade: 317ms linear(0, 0.043 2.6%, 0.125 5.3%, 0.226 7.9%, 0.334 10.5%, 0.44 13.2%, 0.54 15.8%, 0.629 18.4%, 0.707 21.1%, 0.773 23.7%, 0.828 26.3%, 0.873 28.9%, 0.909 31.6%, 0.937 34.2%, 0.959 36.8%, 0.975 39.5%, 0.986 42.1%, 0.995 44.7%, 1);
+  position: relative;
+  isolation: isolate;
+}
+.tb-animated-background [data-id] { position: relative; z-index: 1; }
+.tb-animated-background__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: #f4f4f5;
+  border-radius: 8px;
+  transition:
+    transform var(--tb-ab-move),
+    width var(--tb-ab-move),
+    height var(--tb-ab-move),
+    opacity var(--tb-ab-fade);
+}
+.tb-animated-background__bg.is-active { opacity: 1; }
+.tb-animated-background__bg.is-jump { transition: opacity var(--tb-ab-fade); }
+@media (prefers-reduced-motion: reduce) {
+  .tb-animated-background__bg,
+  .tb-animated-background__bg.is-jump { transition: none; }
+}

@@ -1,0 +1,2 @@
+# Pull and restart TobirAInbox when new commits land on main
+2-59/5 * * * * root /opt/deploy-tobira-inbox.sh 2>> /var/log/tobira-inbox-deploy.log

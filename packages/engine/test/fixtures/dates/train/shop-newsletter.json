@@ -1,0 +1,17 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "shop-newsletter",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-02T00:00:00Z",
+      "text": "今月のおすすめ商品をご紹介します。\n冬の新作コレクションが入荷しました。ぜひオンラインショップをご覧ください。",
+      "expect": {
+        "hint": false,
+        "dates": []
+      }
+    }
+  ]
+}

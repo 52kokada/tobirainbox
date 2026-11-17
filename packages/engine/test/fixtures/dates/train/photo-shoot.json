@@ -1,0 +1,30 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "photo-shoot",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "ours",
+      "sentAt": "2026-11-04T08:00:00Z",
+      "text": "お世話になっております。\n撮影の日程ですが、来週の月曜か火曜の午後はいかがでしょうか。\n店内の撮影で2時間ほどを想定しております。",
+      "expect": {
+        "hint": true,
+        "dates": [
+          {
+            "start": "2026-11-09T13:00",
+            "end": "2026-11-09T18:00",
+            "tz": "Asia/Tokyo",
+            "kind": "offer"
+          },
+          {
+            "start": "2026-11-10T13:00",
+            "end": "2026-11-10T18:00",
+            "tz": "Asia/Tokyo",
+            "kind": "offer"
+          }
+        ]
+      }
+    }
+  ]
+}

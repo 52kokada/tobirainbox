@@ -1,0 +1,44 @@
+/* 枠をめぐる光（Border Beam）。親の縁（border の幅だけ）に沿って、短い光を一周させ続ける。
+   親要素には position: relative と border-radius を付ける。
+   --tb-bb-size（光の長さ px、既定50）・--tb-bb-duration（一周の秒、既定6s）・--tb-bb-delay（ずらし）・--tb-bb-from / --tb-bb-to（色）
+   --tb-bb-width（線の太さ、既定1px）・--tb-bb-offset（始まる位置 %、既定0%）。data-reverse で逆回り。 */
+.tb-border-beam {
+  --tb-bb-size: 50px;
+  --tb-bb-duration: 6s;
+  --tb-bb-delay: 0s;
+  --tb-bb-from: #ffaa40;
+  --tb-bb-to: #9c40ff;
+  --tb-bb-width: 1px;
+  --tb-bb-offset: 0%;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  border: var(--tb-bb-width) solid transparent;
+  /* 内側（padding-box）を透明、外側（border-box）を不透明にして重ね、縁の幅だけを残す。 */
+  -webkit-mask: linear-gradient(transparent, transparent) padding-box, linear-gradient(#000, #000) border-box;
+  -webkit-mask-composite: source-in;
+  mask: linear-gradient(transparent, transparent) padding-box intersect, linear-gradient(#000, #000) border-box;
+}
+.tb-border-beam__beam {
+  position: absolute;
+  width: var(--tb-bb-size);
+  aspect-ratio: 1;
+  background: linear-gradient(to left, var(--tb-bb-from), var(--tb-bb-to), transparent);
+  offset-path: rect(0 auto auto 0 round var(--tb-bb-size));
+  offset-distance: var(--tb-bb-offset);
+  animation: tb-border-beam var(--tb-bb-duration) linear calc(var(--tb-bb-delay) * -1) infinite;
+}
+.tb-border-beam[data-reverse] .tb-border-beam__beam { animation-name: tb-border-beam-reverse; }
+@keyframes tb-border-beam {
+  from { offset-distance: var(--tb-bb-offset); }
+  to { offset-distance: calc(100% + var(--tb-bb-offset)); }
+}
+@keyframes tb-border-beam-reverse {
+  from { offset-distance: calc(100% - var(--tb-bb-offset)); }
+  to { offset-distance: calc(var(--tb-bb-offset) * -1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  /* 動きを減らす設定では、光を始まりの位置に止める。 */
+  .tb-border-beam__beam { animation: none; }
+}

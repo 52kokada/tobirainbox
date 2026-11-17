@@ -1,0 +1,47 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "minato-renewal",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-06T01:30:00Z",
+      "text": "株式会社ミナト企画の佐藤です。\nホームページリニューアルの件で、一度オンラインでお打ち合わせのお時間をいただけますでしょうか。\n来週ですと、11/10(火)14:00〜15:00、11/12(木)10:00〜11:00 のいずれかでご都合いかがでしょうか。\nよろしくお願いいたします。",
+      "expect": {
+        "hint": true,
+        "dates": [
+          {
+            "start": "2026-11-10T14:00",
+            "end": "2026-11-10T15:00",
+            "tz": "Asia/Tokyo",
+            "kind": "offer"
+          },
+          {
+            "start": "2026-11-12T10:00",
+            "end": "2026-11-12T11:00",
+            "tz": "Asia/Tokyo",
+            "kind": "offer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "m2",
+      "direction": "ours",
+      "sentAt": "2026-11-06T04:00:00Z",
+      "text": "佐藤様\n\nお世話になっております。Tobiraの大野です。\n11/12(木)10:00〜11:00でお願いいたします。当日はGoogle MeetのURLをお送りします。",
+      "expect": {
+        "hint": true,
+        "dates": [
+          {
+            "start": "2026-11-12T10:00",
+            "end": "2026-11-12T11:00",
+            "tz": "Asia/Tokyo",
+            "kind": "confirm"
+          }
+        ]
+      }
+    }
+  ]
+}

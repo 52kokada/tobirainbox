@@ -1,0 +1,17 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "manuscript-deadline",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-04T02:40:00Z",
+      "text": "いつもお世話になっております。\n原稿は11月20日(金)までにお送りいたします。\n写真は別途ギガファイル便でお送りします。",
+      "expect": {
+        "hint": true,
+        "dates": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "forwarded-cancel",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-13T00:30:00Z",
+      "text": "大野様\n先方からキャンセルの連絡が来ましたので転送します。",
+      "expect": {
+        "hint": true,
+        "source": "invite",
+        "dates": [
+          {
+            "start": "2026-11-16T05:00",
+            "end": "2026-11-16T06:00",
+            "tz": "UTC",
+            "kind": "cancel"
+          }
+        ]
+      },
+      "payload": {
+        "mimeType": "multipart/mixed",
+        "parts": [
+          {
+            "partId": "0",
+            "mimeType": "text/plain",
+            "body": {
+              "data": "5YWI5pa544GL44KJ44Kt44Oj44Oz44K744Or44Gu6YCj57Wh44GM5p2l44G-44GX44Gf44Gu44Gn6Lui6YCB44GX44G-44GZ44CC"
+            }
+          },
+          {
+            "partId": "1",
+            "mimeType": "message/rfc822",
+            "parts": [
+              {
+                "partId": "1.0",
+                "mimeType": "multipart/mixed",
+                "parts": [
+                  {
+                    "partId": "1.0.0",
+                    "mimeType": "multipart/alternative",
+                    "parts": [
+                      {
+                        "partId": "1.0.0.0",
+                        "mimeType": "text/plain",
+                        "body": {
+                          "data": "44Kt44Oj44Oz44K744Or5riI44G_"
+                        }
+                      },
+                      {
+                        "partId": "1.0.0.1",
+                        "mimeType": "text/calendar",
+                        "body": {
+                          "data": "QkVHSU46VkNBTEVOREFSDQpQUk9ESUQ6TWljcm9zb2Z0IEV4Y2hhbmdlIFNlcnZlciAyMDEwDQpWRVJTSU9OOjIuMA0KTUVUSE9EOkNBTkNFTA0KQkVHSU46VkVWRU5UDQpEVFNUQVJUOjIwMjYxMTE2VDA1MDAwMFoNCkRVUkFUSU9OOlBUMUgNClVJRDowNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwOGV4YW1wbGUNClNFUVVFTkNFOjENClNUQVRVUzpDQU5DRUxMRUQNClNVTU1BUlk644Kt44Oj44Oz44K744Or5riI44G_OiDjgrXjgqTjg4jmiZPjgaHlkIjjgo_jgZsNCkVORDpWRVZFTlQNCkVORDpWQ0FMRU5EQVINCg"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

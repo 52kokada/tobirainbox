@@ -1,0 +1,20 @@
+{
+  "name": "tobira-inbox",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "npm test --workspaces --if-present",
+    "start": "npm start -w @tobira-inbox/server",
+    "preview": "node design/dev-server.mjs",
+    "eval:dates": "npm run eval:dates -w @tobira-inbox/engine --"
+  },
+  "author": "Kotaro Okada"
+}

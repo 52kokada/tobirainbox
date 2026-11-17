@@ -1,0 +1,30 @@
+/* 光が走る文字（Text Shimmer）。灰色の文字の上を、濃い色の帯が右から左へ流れ続ける。「読み込み中」などの表示に。 */
+.tb-text-shimmer {
+  --tb-shimmer-base: #a1a1aa;
+  --tb-shimmer-highlight: #000;
+  --tb-shimmer-spread: 40px;
+  --tb-shimmer-duration: 2s;
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  background-image:
+    linear-gradient(90deg, #0000 calc(50% - var(--tb-shimmer-spread)), var(--tb-shimmer-highlight), #0000 calc(50% + var(--tb-shimmer-spread))),
+    linear-gradient(var(--tb-shimmer-base), var(--tb-shimmer-base));
+  background-size: 250% 100%, auto;
+  background-repeat: no-repeat, padding-box;
+  background-position: 100% center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: tb-text-shimmer var(--tb-shimmer-duration) linear infinite;
+}
+@keyframes tb-text-shimmer {
+  from { background-position: 100% center; }
+  to { background-position: 0% center; }
+}
+@media (prefers-color-scheme: dark) {
+  .tb-text-shimmer:not([data-theme="light"]) { --tb-shimmer-base: #71717a; --tb-shimmer-highlight: #fff; }
+}
+@media (prefers-reduced-motion: reduce) {
+  /* 動かさず、読みやすい濃い色で止める */
+  .tb-text-shimmer { animation: none; background-image: none, linear-gradient(var(--tb-shimmer-highlight), var(--tb-shimmer-highlight)); }
+}

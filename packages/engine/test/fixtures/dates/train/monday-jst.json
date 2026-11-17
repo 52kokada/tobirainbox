@@ -1,0 +1,24 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "monday-jst",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-06T22:00:00Z",
+      "text": "Thanks! Monday 9am JST works for us. See you then.\n\nTom",
+      "expect": {
+        "hint": true,
+        "dates": [
+          {
+            "start": "2026-11-09T09:00",
+            "end": "2026-11-09T09:30",
+            "tz": "Asia/Tokyo",
+            "kind": "confirm"
+          }
+        ]
+      }
+    }
+  ]
+}

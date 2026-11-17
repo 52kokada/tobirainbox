@@ -1,0 +1,24 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "sync-after-dst",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-10-29T17:00:00Z",
+      "text": "Hi team,\n\nCan we move our sync to next Tuesday at 3pm PT? Something came up on Monday.\n\nThanks,\nJordan",
+      "expect": {
+        "hint": true,
+        "dates": [
+          {
+            "start": "2026-11-03T15:00",
+            "end": "2026-11-03T15:30",
+            "tz": "America/Los_Angeles",
+            "kind": "change"
+          }
+        ]
+      }
+    }
+  ]
+}

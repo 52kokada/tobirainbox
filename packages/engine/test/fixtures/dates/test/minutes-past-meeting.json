@@ -1,0 +1,17 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "minutes-past-meeting",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-04T07:00:00Z",
+      "text": "先日11月2日のお打ち合わせではありがとうございました。\n議事録をお送りしますのでご確認ください。",
+      "expect": {
+        "hint": true,
+        "dates": []
+      }
+    }
+  ]
+}

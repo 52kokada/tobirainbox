@@ -1,0 +1,24 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "reschedule-mtg",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-11T09:00:00Z",
+      "text": "お疲れ様です。\n明日のMTGですが、リスケをお願いできますでしょうか。来週月曜の同じ時間（11時）でいかがでしょうか。",
+      "expect": {
+        "hint": true,
+        "dates": [
+          {
+            "start": "2026-11-16T11:00",
+            "end": "2026-11-16T11:30",
+            "tz": "Asia/Tokyo",
+            "kind": "change"
+          }
+        ]
+      }
+    }
+  ]
+}

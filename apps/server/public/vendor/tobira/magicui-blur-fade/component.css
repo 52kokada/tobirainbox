@@ -1,0 +1,27 @@
+/* ぼかしながら現れる（Blur Fade）。data 属性と CSS 変数で調整する。 */
+.tb-blur-fade {
+  --tb-bf-duration: 0.4s;
+  --tb-bf-delay: 0s;
+  --tb-bf-offset: 6px;
+  --tb-bf-blur: 6px;
+  --tb-bf-x: 0px;
+  --tb-bf-y: calc(var(--tb-bf-offset) * -1);
+  opacity: 0;
+  filter: blur(var(--tb-bf-blur));
+  transform: translate(var(--tb-bf-x), var(--tb-bf-y));
+  transition:
+    opacity var(--tb-bf-duration) ease-out calc(0.04s + var(--tb-bf-delay)),
+    filter var(--tb-bf-duration) ease-out calc(0.04s + var(--tb-bf-delay)),
+    transform var(--tb-bf-duration) ease-out calc(0.04s + var(--tb-bf-delay));
+}
+.tb-blur-fade[data-direction="up"]    { --tb-bf-y: var(--tb-bf-offset); }
+.tb-blur-fade[data-direction="left"]  { --tb-bf-x: var(--tb-bf-offset); --tb-bf-y: 0px; }
+.tb-blur-fade[data-direction="right"] { --tb-bf-x: calc(var(--tb-bf-offset) * -1); --tb-bf-y: 0px; }
+.tb-blur-fade.is-visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tb-blur-fade { opacity: 1; filter: none; transform: none; transition: none; }
+}

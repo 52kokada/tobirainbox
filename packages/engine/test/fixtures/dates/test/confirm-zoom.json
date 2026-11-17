@@ -1,0 +1,24 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "confirm-zoom",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "ours",
+      "sentAt": "2026-11-13T01:00:00Z",
+      "text": "ご提案いただいた日程のうち、11月19日（木）13:30〜14:30でお願いいたします。\nオンライン（Zoom）で実施させてください。",
+      "expect": {
+        "hint": true,
+        "dates": [
+          {
+            "start": "2026-11-19T13:30",
+            "end": "2026-11-19T14:30",
+            "tz": "Asia/Tokyo",
+            "kind": "confirm"
+          }
+        ]
+      }
+    }
+  ]
+}

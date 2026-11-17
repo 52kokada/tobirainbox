@@ -1,0 +1,20 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "our-preview-offer",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "ours",
+      "sentAt": "2026-11-05T02:00:00Z",
+      "text": "無料でプレビューサイトをお作りできます。\nご興味があればお知らせください。",
+      "expect": {
+        "hint": false,
+        "dates": [],
+        "preview": {
+          "wanted": false
+        }
+      }
+    }
+  ]
+}

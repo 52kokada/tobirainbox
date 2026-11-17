@@ -1,0 +1,17 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "year-end-hours",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-12T01:00:00Z",
+      "text": "平素より格別のご高配を賜り、誠にありがとうございます。\n年末年始の営業は12月28日まで、1月5日より通常営業いたします。",
+      "expect": {
+        "hint": true,
+        "dates": []
+      }
+    }
+  ]
+}

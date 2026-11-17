@@ -1,0 +1,47 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "interview-candidates",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-06T06:20:00Z",
+      "text": "面談の候補日をお送りします。\n・１１月１６日（月）１０：００〜\n・１１月１７日（火）１６：００〜\nご都合のよい日時をお知らせください。",
+      "expect": {
+        "hint": true,
+        "dates": [
+          {
+            "start": "2026-11-16T10:00",
+            "end": "2026-11-16T10:30",
+            "tz": "Asia/Tokyo",
+            "kind": "offer"
+          },
+          {
+            "start": "2026-11-17T16:00",
+            "end": "2026-11-17T16:30",
+            "tz": "Asia/Tokyo",
+            "kind": "offer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "m2",
+      "direction": "ours",
+      "sentAt": "2026-11-06T07:00:00Z",
+      "text": "ご連絡ありがとうございます。\nそれでは11月17日（火）16:00〜でお願いいたします。弊社までお越しいただけますと幸いです。",
+      "expect": {
+        "hint": true,
+        "dates": [
+          {
+            "start": "2026-11-17T16:00",
+            "end": "2026-11-17T16:30",
+            "tz": "Asia/Tokyo",
+            "kind": "confirm"
+          }
+        ]
+      }
+    }
+  ]
+}

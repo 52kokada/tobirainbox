@@ -1,0 +1,172 @@
+[
+  {
+    "id": "ja-optout-haishin-teishi",
+    "lang": "ja",
+    "label": "optout",
+    "body": "配信停止でお願いします。",
+    "stripped": "配信停止でお願いします。"
+  },
+  {
+    "id": "ja-optout-polite",
+    "lang": "ja",
+    "label": "optout",
+    "body": "今後このようなメールは送らないでください。\nよろしくお願いいたします。",
+    "stripped": "今後このようなメールは送らないでください。\nよろしくお願いいたします。"
+  },
+  {
+    "id": "ja-optout-sakujo",
+    "lang": "ja",
+    "label": "optout",
+    "body": "リストから削除してください。",
+    "stripped": "リストから削除してください。"
+  },
+  {
+    "id": "ja-optout-with-quote",
+    "lang": "ja",
+    "label": "optout",
+    "body": "配信を停止してください。\n\n2026年11月1日(日) 10:00 Example Studio <alex@example.com>:\n> こちらのウェブサイトを拝見しました\n> 配信停止をご希望の場合はご返信ください",
+    "stripped": "配信を停止してください。"
+  },
+  {
+    "id": "ja-optout-fullwidth-quote",
+    "lang": "ja",
+    "label": "optout",
+    "body": "送信しないでください。\n＞ ご興味があれば「見てみたい」とご返信ください",
+    "stripped": "送信しないでください。"
+  },
+  {
+    "id": "ja-optout-after-decline",
+    "lang": "ja",
+    "label": "optout",
+    "body": "不要です。今後の連絡も不要ですので送信を停止してください。",
+    "stripped": "不要です。今後の連絡も不要ですので送信を停止してください。"
+  },
+  {
+    "id": "en-optout-unsubscribe",
+    "lang": "en",
+    "label": "optout",
+    "body": "Unsubscribe",
+    "stripped": "Unsubscribe"
+  },
+  {
+    "id": "en-optout-remove",
+    "lang": "en",
+    "label": "optout",
+    "body": "Please remove me from your mailing list.\n\nOn Mon, Nov 2, 2026 at 9:00 AM Alex wrote:\n> We localize websites",
+    "stripped": "Please remove me from your mailing list."
+  },
+  {
+    "id": "en-optout-stop",
+    "lang": "en",
+    "label": "optout",
+    "body": "Stop emailing us. Not interested.\n-----Original Message-----\nFrom: alex@example.com\nSubject: Website",
+    "stripped": "Stop emailing us. Not interested."
+  },
+  {
+    "id": "en-optout-outlook-from",
+    "lang": "en",
+    "label": "optout",
+    "body": "Do not contact us again.\nFrom: Alex <alex@example.com>\nSent: Monday\nTo: info@example.jp",
+    "stripped": "Do not contact us again."
+  },
+  {
+    "id": "ja-negative-fuyou",
+    "lang": "ja",
+    "label": "negative",
+    "body": "不要です。",
+    "stripped": "不要です。"
+  },
+  {
+    "id": "ja-negative-miokuri",
+    "lang": "ja",
+    "label": "negative",
+    "body": "今回は見送らせていただきます。",
+    "stripped": "今回は見送らせていただきます。"
+  },
+  {
+    "id": "ja-negative-quoted-unsub-footer",
+    "lang": "ja",
+    "label": "negative",
+    "body": "結構です。\n> 配信停止をご希望の方はこのメールにご返信ください。",
+    "stripped": "結構です。"
+  },
+  {
+    "id": "en-negative",
+    "lang": "en",
+    "label": "negative",
+    "body": "Thanks, but we are not interested at this time.",
+    "stripped": "Thanks, but we are not interested at this time."
+  },
+  {
+    "id": "ja-positive-mitemitai",
+    "lang": "ja",
+    "label": "positive",
+    "body": "見てみたい\n> 配信停止をご希望の場合は「配信停止」とご返信ください",
+    "stripped": "見てみたい"
+  },
+  {
+    "id": "ja-positive-details",
+    "lang": "ja",
+    "label": "positive",
+    "body": "ご返信ありがとうございます。詳しく聞かせてください。",
+    "stripped": "ご返信ありがとうございます。詳しく聞かせてください。"
+  },
+  {
+    "id": "en-positive",
+    "lang": "en",
+    "label": "positive",
+    "body": "Sounds interesting, could you send more details?",
+    "stripped": "Sounds interesting, could you send more details?"
+  },
+  {
+    "id": "ja-oob",
+    "lang": "ja",
+    "label": "oob",
+    "body": "誠に勝手ながら11月3日から11月5日まで休業しております。",
+    "stripped": "誠に勝手ながら11月3日から11月5日まで休業しております。"
+  },
+  {
+    "id": "en-oob",
+    "lang": "en",
+    "label": "oob",
+    "body": "I am out of the office until Monday with limited access to email.",
+    "stripped": "I am out of the office until Monday with limited access to email."
+  },
+  {
+    "id": "en-auto-bounce",
+    "lang": "en",
+    "label": "auto",
+    "body": "Delivery Status Notification (Failure)\nThe recipient address was rejected.",
+    "stripped": "Delivery Status Notification (Failure)\nThe recipient address was rejected."
+  },
+  {
+    "id": "ja-unclear",
+    "lang": "ja",
+    "label": "unclear",
+    "body": "どちら様でしょうか？",
+    "stripped": "どちら様でしょうか？"
+  },
+  {
+    "id": "quote-only",
+    "lang": "ja",
+    "label": "unclear",
+    "body": "> 元のメッセージだけ",
+    "stripped": "> 元のメッセージだけ"
+  },
+  {
+    "id": "ja-positive-redirect-to-manager",
+    "lang": "ja",
+    "label": "positive",
+    "note": "positive reply that redirects to a manager; was misread as optout",
+    "body": "案を見てみたいので、送ってください。こちらでは決められないため、今後のご連絡は下記の担当者宛にお願いします。\nboss@example.com",
+    "stripped": "案を見てみたいので、送ってください。こちらでは決められないため、今後のご連絡は下記の担当者宛にお願いします。\nboss@example.com"
+  },
+  {
+    "id": "ja-optout-with-reason",
+    "lang": "ja",
+    "label": "optout",
+    "note": "opt-out that gives a business reason; was misread as unclear",
+    "body": "今後のご連絡は不要です。観光のお客様が多く手が回らないため、あえて何も対応しておりません。",
+    "stripped": "今後のご連絡は不要です。観光のお客様が多く手が回らないため、あえて何も対応しておりません。"
+  }
+]

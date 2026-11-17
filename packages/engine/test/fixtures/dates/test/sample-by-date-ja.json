@@ -1,0 +1,21 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "sample-by-date-ja",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-10T03:00:00Z",
+      "text": "サンプルサイト、ぜひお願いします。\n11月20日までにいただけますと幸いです。",
+      "expect": {
+        "dates": [],
+        "preview": {
+          "wanted": true,
+          "due": "2026-11-20",
+          "source": "mail_date"
+        }
+      }
+    }
+  ]
+}

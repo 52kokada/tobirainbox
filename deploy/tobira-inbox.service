@@ -1,0 +1,25 @@
+[Unit]
+Description=TobirAInbox API
+After=network.target
+
+[Service]
+Type=simple
+User=tobira-inbox
+Group=tobira-inbox
+WorkingDirectory=/opt/tobira-inbox
+EnvironmentFile=/opt/tobira-inbox/.env
+ExecStart=/usr/bin/node apps/server/server.js
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=tobira-inbox
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ReadWritePaths=/opt/tobira-inbox/data
+MemoryMax=600M
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,30 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "mon-or-tue",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "ours",
+      "sentAt": "2026-11-06T01:00:00Z",
+      "text": "Hi Sam,\n\nWe could do either Mon or Tue afternoon next week, Tokyo time. Let me know what suits you.\n\nKotaro",
+      "expect": {
+        "hint": true,
+        "dates": [
+          {
+            "start": "2026-11-09T13:00",
+            "end": "2026-11-09T18:00",
+            "tz": "Asia/Tokyo",
+            "kind": "offer"
+          },
+          {
+            "start": "2026-11-10T13:00",
+            "end": "2026-11-10T18:00",
+            "tz": "Asia/Tokyo",
+            "kind": "offer"
+          }
+        ]
+      }
+    }
+  ]
+}

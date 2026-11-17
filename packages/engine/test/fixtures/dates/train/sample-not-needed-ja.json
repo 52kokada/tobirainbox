@@ -1,0 +1,19 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "sample-not-needed-ja",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-06T05:00:00Z",
+      "text": "ご連絡ありがとうございます。\n今回はサンプルは不要です。社内で検討してまたご連絡します。",
+      "expect": {
+        "dates": [],
+        "preview": {
+          "wanted": false
+        }
+      }
+    }
+  ]
+}

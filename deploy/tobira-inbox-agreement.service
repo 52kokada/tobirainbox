@@ -1,0 +1,7 @@
+[Unit]
+Description=TobirAInbox vs external CRM sorting agreement (read-only, daily)
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/tobira-inbox
+ExecStart=/bin/sh -c '/usr/bin/node apps/server/bin/agreement.js /opt/tobira-inbox/data/tobira-inbox.db /opt/crm/data/crm.db 14 >> /var/log/tobira-inbox-agreement.log'

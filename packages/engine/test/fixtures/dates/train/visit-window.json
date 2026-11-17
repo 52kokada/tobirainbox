@@ -1,0 +1,24 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "visit-window",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "ours",
+      "sentAt": "2026-11-12T06:00:00Z",
+      "text": "ご連絡ありがとうございます。\n11月17日（火）は10時から12時の間でしたらいつでも伺えます。ご都合のよいお時間をお知らせください。",
+      "expect": {
+        "hint": true,
+        "dates": [
+          {
+            "start": "2026-11-17T10:00",
+            "end": "2026-11-17T12:00",
+            "tz": "Asia/Tokyo",
+            "kind": "offer"
+          }
+        ]
+      }
+    }
+  ]
+}

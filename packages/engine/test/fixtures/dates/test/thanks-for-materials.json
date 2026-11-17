@@ -1,0 +1,17 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "thanks-for-materials",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-10T08:30:00Z",
+      "text": "資料ありがとうございました。\n社内で検討いたします。",
+      "expect": {
+        "hint": false,
+        "dates": []
+      }
+    }
+  ]
+}

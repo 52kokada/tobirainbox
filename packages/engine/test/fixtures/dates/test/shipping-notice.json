@@ -1,0 +1,17 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "shipping-notice",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-09T04:00:00Z",
+      "text": "ご注文ありがとうございます。\n商品は11月12日（木）に発送予定です。",
+      "expect": {
+        "hint": true,
+        "dates": []
+      }
+    }
+  ]
+}

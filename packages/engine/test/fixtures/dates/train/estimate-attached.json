@@ -1,0 +1,17 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "estimate-attached",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-05T05:12:00Z",
+      "text": "お世話になっております。\nお見積書を添付いたします。\nご確認のほどよろしくお願いいたします。",
+      "expect": {
+        "hint": false,
+        "dates": []
+      }
+    }
+  ]
+}

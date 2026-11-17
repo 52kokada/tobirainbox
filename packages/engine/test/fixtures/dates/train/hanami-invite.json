@@ -1,0 +1,58 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "hanami-invite",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-06T03:00:00Z",
+      "text": "招待: 定例ミーティング（株式会社ハナミ × Tobira） 2026年11月13日(金) 11:00～12:00 (JST)",
+      "expect": {
+        "hint": true,
+        "source": "invite",
+        "dates": [
+          {
+            "start": "2026-11-13T11:00",
+            "end": "2026-11-13T12:00",
+            "tz": "Asia/Tokyo",
+            "kind": "confirm"
+          }
+        ]
+      },
+      "payload": {
+        "mimeType": "multipart/mixed",
+        "parts": [
+          {
+            "partId": "0",
+            "mimeType": "multipart/alternative",
+            "parts": [
+              {
+                "partId": "0.0",
+                "mimeType": "text/plain",
+                "body": {
+                  "data": "5oub5b6FOiDlrprkvovjg5_jg7zjg4bjgqPjg7PjgrA"
+                }
+              },
+              {
+                "partId": "0.1",
+                "mimeType": "text/calendar",
+                "body": {
+                  "data": "QkVHSU46VkNBTEVOREFSDQpQUk9ESUQ6LS8vR29vZ2xlIEluYy8vR29vZ2xlIENhbGVuZGFyIDcwLjkwNTQvL0VODQpWRVJTSU9OOjIuMA0KTUVUSE9EOlJFUVVFU1QNCkJFR0lOOlZFVkVOVA0KRFRTVEFSVDtUWklEPUFzaWEvVG9reW86MjAyNjExMTNUMTEwMDAwDQpEVEVORDtUWklEPUFzaWEvVG9reW86MjAyNjExMTNUMTIwMDAwDQpVSUQ6N2txMmV4YW1wbGUwMUBnb29nbGUuY29tDQpTRVFVRU5DRTowDQpTVEFUVVM6Q09ORklSTUVEDQpTVU1NQVJZOuWumuS-i-ODn-ODvOODhuOCo-ODs-OCsO-8iOagquW8j-S8muekvuODj-ODiuODnyDDlyBUb2JpcmHvvIkNCkxPQ0FUSU9OOmh0dHBzOi8vbWVldC5nb29nbGUuY29tL2FiYy1kZWZnLWhpag0KRU5EOlZFVkVOVA0KRU5EOlZDQUxFTkRBUg0K"
+                }
+              }
+            ]
+          },
+          {
+            "partId": "1",
+            "mimeType": "application/ics",
+            "filename": "invite.ics",
+            "body": {
+              "attachmentId": "ANGjdJ_invite"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

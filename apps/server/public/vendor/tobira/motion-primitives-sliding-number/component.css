@@ -1,0 +1,31 @@
+/* すべる数字（Sliding Number）。数字が変わると、各桁が縦に回ってばねのように止まる。 */
+.tb-sliding-number {
+  display: inline-flex;
+  align-items: center;
+  font-variant-numeric: tabular-nums;
+}
+.tb-sliding-number__digit {
+  position: relative;
+  display: inline-block;
+  width: 1ch;
+  line-height: 1;
+  overflow-x: visible;
+  overflow-y: clip;
+}
+.tb-sliding-number__ghost { visibility: hidden; display: block; }
+.tb-sliding-number__n {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
+}
+.tb-sliding-number__sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

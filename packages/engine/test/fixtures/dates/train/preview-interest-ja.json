@@ -1,0 +1,21 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "preview-interest-ja",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-06T01:00:00Z",
+      "text": "ご提案ありがとうございます。\nぜひプレビューを見てみたいです。\nよろしくお願いいたします。",
+      "expect": {
+        "dates": [],
+        "preview": {
+          "wanted": true,
+          "due": "2026-11-09",
+          "source": "rule"
+        }
+      }
+    }
+  ]
+}

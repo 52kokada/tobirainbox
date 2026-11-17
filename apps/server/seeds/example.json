@@ -1,0 +1,92 @@
+{
+  "business": "Example Studio",
+  "style": "日本語のビジネス敬語（丁寧・落ち着き・温かく・押し付けない）。感嘆符は使わない。一つの話題ごとに短い段落にし、段落の間は一行空ける。宛名（会社・店名、〇〇 様。名前が分からなければ ご担当者様）→「お世話になっております。」→ お礼一行 → 本文（質問が複数なら【1】【2】で順に）→ 次の一歩を一つ →「何卒よろしくお願い申し上げます。」→ 署名。当方は 私ども、相手は 貴社・貴店。前向きな最初の返信は 5〜6 段落で、言いたいことを一度、温かく言って終える。",
+  "voices": [
+    {
+      "address": "leo@example.com",
+      "fullName": "大野 晃（オオノ アキラ）",
+      "surname": "大野"
+    },
+    {
+      "address": "kit@example.com",
+      "fullName": "Kit Y",
+      "surname": "Kit Y"
+    },
+    {
+      "address": "hal@example.com",
+      "fullName": "Example Studio 林",
+      "surname": "林"
+    },
+    {
+      "address": "mia@example.com",
+      "fullName": "森 （モリ）",
+      "surname": "森"
+    },
+    {
+      "address": "jay@example.com",
+      "fullName": "Jay Park",
+      "surname": "Park"
+    },
+    {
+      "address": "ada@example.com",
+      "fullName": "Ada Lin",
+      "surname": "Lin"
+    },
+    {
+      "address": "hal@library.example.com",
+      "fullName": "EXAMPLE 林",
+      "surname": "林",
+      "signature": "EXAMPLE 林\nMail: hal@library.example.com\nReply-To: hal@example.com\nURL: https://example.com"
+    }
+  ],
+  "playbook": [
+    {
+      "label": "inquiry",
+      "text": "「見てみたい」だけの短い返信には、フォームを送らない。方向性の質問を2〜3問だけ本文に書き、このメールへの返信で一言答えてもらう形にする。リンクは足さない。"
+    },
+    {
+      "label": "inquiry",
+      "text": "具体的な要望や質問がある返信なら、ヒアリングフォーム（facts の「ヒアリングフォーム」）を案内してよい。"
+    },
+    {
+      "label": "inquiry",
+      "text": "無料サンプルを渡す前は、料金を本文に書かず料金表も添付しない。料金はサンプルを渡した後か、相手が聞いてきたときだけ出す。"
+    },
+    {
+      "text": "料金を答えるときは facts の料金表の金額だけを使う。表にない金額は書かない。"
+    },
+    {
+      "text": "打ち合わせは30分ほどのオンラインでと本文で案内し、ご都合のよい日時を伺う。相手が同意したら候補日時を2〜3枠提示する。日程を提示されたら勝手に確定・承諾せず、確認のうえ改めて連絡すると伝える。下書きには Meet・Zoom の URL を書かない。"
+    },
+    {
+      "label": "decline",
+      "text": "お断りには短く丁寧に返す。サンプル・料金・打ち合わせ・フォームは一切出さない。"
+    },
+    {
+      "label": "optout",
+      "text": "配信停止の依頼には、停止した旨とお詫びだけを二〜三行で返す。営業の言葉は入れない。"
+    },
+    {
+      "text": "URL は facts にあるものと、スレッドに既に出ているプレビュー URL（https://example.com/<名前>-preview/）だけを使う。新しい URL を作らない。"
+    },
+    {
+      "text": "1通の目的は一つ。相手にしてほしい次の行動も一つだけにする。"
+    },
+    {
+      "text": "期限は日付ではなく「3営業日以内」のように書く。"
+    },
+    {
+      "text": "根拠のない称賛や誇張を書かない。相手が実際に提供しているものと違う体験を書かない。"
+    },
+    {
+      "text": "契約済み・進行中のお客様にはサンプルの提案を入れない。"
+    }
+  ],
+  "facts": {
+    "料金表（税込）": "ページ制作 ¥100,000〜、ページ制作＋英語対応 ¥150,000〜、小オプション別途 ¥10,000 程度",
+    "納品形式": "静的HTML（index.html + assets 一式）、スマホ対応",
+    "ヒアリングフォーム": "https://example.com/intake-form",
+    "打ち合わせ予約（30分）": "https://cal.com/example/30min",
+    "公式サイト": "https://example.com"
+  }
+}

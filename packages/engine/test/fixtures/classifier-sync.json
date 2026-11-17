@@ -1,0 +1,8 @@
+{
+  "source": "external CRM backend (classifier, corpus test and corpus)",
+  "sha256": {
+    "packages/engine/src/outreach-classifier.js": "342269f1b18df5914d2acd7dc21ed2a5fb69d7a3754c7299b429b42bde6b304a",
+    "packages/engine/test/outreach-classifier-corpus.test.js": "039932aee4ef0fd57898e740aa7b4502c13e0fa2284c2db93eda9654f3ec4bad",
+    "packages/engine/test/fixtures/classifier-corpus.json": "284f433b96b21bb2d1d9263672ea0825f77004331d93a901ffb2d504e9fbbba6"
+  }
+}

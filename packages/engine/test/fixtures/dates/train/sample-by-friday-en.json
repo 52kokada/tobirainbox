@@ -1,0 +1,21 @@
+{
+  "synthetic": true,
+  "businessTz": "Asia/Tokyo",
+  "thread": "sample-by-friday-en",
+  "messages": [
+    {
+      "id": "m1",
+      "direction": "theirs",
+      "sentAt": "2026-11-09T00:00:00Z",
+      "text": "Thanks Alex, we'd love to see a sample site. Could you send it by Friday Nov 13?\n\nBest,\nLaura",
+      "expect": {
+        "dates": [],
+        "preview": {
+          "wanted": true,
+          "due": "2026-11-13",
+          "source": "mail_date"
+        }
+      }
+    }
+  ]
+}
